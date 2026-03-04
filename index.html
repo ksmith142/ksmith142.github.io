@@ -1,419 +1,521 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131755667-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-131755667-3');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131755667-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-131755667-3');
+    </script>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
     <meta name="description" content="Kevin C. Smith">
-    <meta name="author" content="Kevin C. Smith"> 
+    <meta name="author" content="Kevin C. Smith">
+    <meta name="keywords" content="kevin, smith, stanford gsb accounting, stanford gsb" />
 
     <title>Kevin C. Smith</title>
 
-    <!-- Bootstrap core CSS -->
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="keywords" content="kevin, smith, stanford gsb accounting, stanford gsb" />
-  <title>Kevin Smith</title>
-  <style>
-    html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
-      color: #1a1a1a;
-      background-color: #fdfdfd;
-    }
-    body {
-      margin: 0 auto;
-      max-width: 36em;
-      padding-left: 50px;
-      padding-right: 50px;
-      padding-top: 50px;
-      padding-bottom: 50px;
-      hyphens: auto;
-      word-wrap: break-word;
-      text-rendering: optimizeLegibility;
-      font-kerning: normal;
-    }
-    @media (max-width: 600px) {
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+    <style>
+      :root {
+        --accent: #8c1515;
+        --accent-light: #b83a3a;
+        --text: #2d2d2d;
+        --text-light: #555;
+        --text-muted: #777;
+        --bg: #fff;
+        --bg-alt: #f8f7f5;
+        --border: #e4e0db;
+        --link: #8c1515;
+        --link-hover: #5e0e0e;
+        --max-width: 820px;
+      }
+
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+
+      html {
+        font-size: 17px;
+        scroll-behavior: smooth;
+      }
+
       body {
-        font-size: 0.9em;
-        padding: 1em;
+        font-family: 'Source Sans 3', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: var(--text);
+        background-color: var(--bg);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
       }
-    }
-    @media print {
-      body {
-        background-color: transparent;
-        color: black;
-        font-size: 12pt;
+
+      /* ---- NAV ---- */
+      nav {
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        position: sticky;
+        top: 0;
+        z-index: 100;
       }
-      p, h2, h3 {
-        orphans: 3;
-        widows: 3;
+      nav .nav-inner {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0.75rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
       }
-      h2, h3, h4 {
-        page-break-after: avoid;
+      nav .nav-name {
+        font-family: 'Source Serif 4', Georgia, serif;
+        font-weight: 700;
+        font-size: 1.1rem;
+        color: var(--text);
+        text-decoration: none;
       }
-    }
-    p {
-      margin: 1em 0;
-    }
-    a {
-      color: #1a1a1a;
-    }
-    a:visited {
-      color: #1a1a1a;
-    }
-    img {
-      max-width: 100%;
-    }
-    h1, h2, h3, h4, h5, h6 {
-      margin-top: 1.4em;
-    }
-    h5, h6 {
-      font-size: 1em;
-      font-style: italic;
-    }
-    h6 {
-      font-weight: normal;
-    }
-    ol, ul {
-      padding-left: 1.7em;
-      margin-top: 1em;
-    }
-    li > ol, li > ul {
-      margin-top: 0;
-    }
-    blockquote {
-      margin: 1em 0 1em 1.7em;
-      padding-left: 1em;
-      border-left: 2px solid #e6e6e6;
-      color: #606060;
-    }
-    code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
-      font-size: 85%;
-      margin: 0;
-    }
-    pre {
-      margin: 1em 0;
-      overflow: auto;
-    }
-    pre code {
-      padding: 0;
-      overflow: visible;
-    }
-    .sourceCode {
-     background-color: transparent;
-     overflow: visible;
-    }
-    hr {
-      background-color: #1a1a1a;
-      border: none;
-      height: 1px;
-      margin: 1em 0;
-    }
-    table {
-      margin: 1em 0;
-      border-collapse: collapse;
-      width: 100%;
-      overflow-x: auto;
-      display: block;
-      font-variant-numeric: lining-nums tabular-nums;
-    }
-    table caption {
-      margin-bottom: 0.75em;
-    }
-    tbody {
-      margin-top: 0.5em;
-      border-top: 1px solid #1a1a1a;
-      border-bottom: 1px solid #1a1a1a;
-    }
-    th {
-      border-top: 1px solid #1a1a1a;
-      padding: 0.25em 0.5em 0.25em 0.5em;
-    }
-    td {
-      padding: 0.125em 0.5em 0.25em 0.5em;
-    }
-    header {
-      margin-bottom: 4em;
-      text-align: center;
-    }
-    #TOC li {
-      list-style: none;
-    }
-    #TOC a:not(:hover) {
-      text-decoration: none;
-    }
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-  <style type="text/css">
-  body {
-      margin: auto;
-      padding-right: 10%;
-      padding-left: 10%;
-      max-width: 47em;
-      font-family: "Helvetica Neue", Helvetica, sans-serif;
-      font-size: 80%;
-      line-height: 140%;
-      color: #000;
-  }
+      nav .nav-links a {
+        color: var(--text-light);
+        text-decoration: none;
+        font-size: 0.9rem;
+        font-weight: 400;
+        margin-left: 1.5rem;
+        transition: color 0.2s;
+      }
+      nav .nav-links a:hover {
+        color: var(--accent);
+      }
 
-  h1, h2, h3, h4, h5, h6 {
-    color: #000;
-    line-height: 140%;
-    font-weight: normal;
-  }
+      /* ---- HEADER / HERO ---- */
+      .hero {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 3rem 2rem 2.5rem;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+      }
+      .hero-text {
+        flex: 1;
+      }
+      .hero-text h1 {
+        font-family: 'Source Serif 4', Georgia, serif;
+        font-size: 2.3rem;
+        font-weight: 700;
+        line-height: 1.2;
+        color: var(--text);
+        margin-bottom: 0.5rem;
+      }
+      .hero-text .title {
+        font-size: 1.05rem;
+        color: var(--text-light);
+        margin-bottom: 0.25rem;
+      }
+      .hero-text .affiliation {
+        font-size: 1.05rem;
+        color: var(--text-light);
+        margin-bottom: 0.75rem;
+      }
+      .hero-text .contact {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        margin-bottom: 1rem;
+      }
+      .hero-text .links a {
+        display: inline-block;
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: var(--link);
+        text-decoration: none;
+        border: 1.5px solid var(--accent);
+        border-radius: 4px;
+        padding: 0.3rem 0.75rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.4rem;
+        transition: background 0.2s, color 0.2s;
+      }
+      .hero-text .links a:hover {
+        background: var(--accent);
+        color: #fff;
+      }
+      .hero-photo {
+        flex-shrink: 0;
+      }
+      .hero-photo img {
+        width: 220px;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid var(--bg-alt);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      }
 
-  a {
-  text-decoration: none;
-  }
+      /* ---- MAIN CONTENT ---- */
+      main {
+        max-width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 2rem 4rem;
+      }
 
-  a:link {
-      color: blue;
-  }
+      /* ---- SECTIONS ---- */
+      section {
+        margin-bottom: 2.5rem;
+      }
+      section h2 {
+        font-family: 'Source Serif 4', Georgia, serif;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--text);
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid var(--accent);
+        margin-bottom: 1.25rem;
+      }
 
-  a:visited {
-      color: blue;
-  }
+      /* ---- PAPER ITEMS ---- */
+      .paper {
+        margin-bottom: 1.5rem;
+        padding: 1.1rem 1.25rem;
+        background: var(--bg-alt);
+        border-radius: 6px;
+        border-left: 3px solid var(--accent);
+        transition: box-shadow 0.2s;
+      }
+      .paper:hover {
+        box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      }
+      .paper .paper-title {
+        font-weight: 700;
+        font-size: 0.97rem;
+        line-height: 1.5;
+        color: var(--text);
+      }
+      .paper .paper-title em {
+        font-weight: 400;
+      }
+      .paper .paper-venue {
+        font-weight: 700;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        margin-top: 0.2rem;
+      }
+      .paper .paper-venue em {
+        font-weight: 700;
+      }
+      .paper .paper-links {
+        margin-top: 0.35rem;
+      }
+      .paper .paper-links a {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--link);
+        text-decoration: none;
+        margin-right: 0.65rem;
+        transition: color 0.2s;
+      }
+      .paper .paper-links a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+      }
+      .paper .paper-abstract {
+        margin-top: 0.45rem;
+        font-size: 0.92rem;
+        color: var(--text-light);
+        line-height: 1.65;
+        font-style: italic;
+      }
 
-  ul li {
-       line-height:130%; 
-       margin-bottom: 0 em;
-  }
+      /* ---- TEACHING ---- */
+      .teaching-intro {
+        font-size: 0.97rem;
+        line-height: 1.7;
+        color: var(--text-light);
+        margin-bottom: 1rem;
+      }
+      .lecture-list {
+        list-style: none;
+        padding: 0;
+      }
+      .lecture-list li {
+        padding: 0.45rem 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .lecture-list li:last-child {
+        border-bottom: none;
+      }
+      .lecture-list a {
+        color: var(--link);
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: color 0.2s;
+      }
+      .lecture-list a:hover {
+        color: var(--link-hover);
+        text-decoration: underline;
+      }
 
-  tbody {
-      border: none;
-  }
+      /* ---- LINKS (general) ---- */
+      a {
+        color: var(--link);
+      }
+      a:hover {
+        color: var(--link-hover);
+      }
 
-  </style>
+      /* ---- PRINT ---- */
+      @media print {
+        body { background-color: transparent; color: black; font-size: 12pt; }
+        nav { display: none; }
+        .hero-photo img { border-radius: 0; box-shadow: none; }
+        .paper { background: transparent; border-left: 2px solid #999; }
+        p, h2, h3 { orphans: 3; widows: 3; }
+        h2, h3, h4 { page-break-after: avoid; }
+      }
 
-  <!----
-  pandoc -H pandoc.css index.txt -o index.html
-  ------>
-</head>
-<body>
+      /* ---- RESPONSIVE ---- */
+      @media (max-width: 700px) {
+        html { font-size: 16px; }
+        .hero {
+          flex-direction: column-reverse;
+          text-align: center;
+          gap: 1.5rem;
+          padding: 2rem 1.25rem 1.5rem;
+        }
+        .hero-photo img { width: 160px; height: 160px; }
+        .hero-text .links { justify-content: center; display: flex; flex-wrap: wrap; }
+        main { padding: 0 1.25rem 3rem; }
+        nav .nav-inner { padding: 0.6rem 1.25rem; }
+        nav .nav-links a { margin-left: 1rem; font-size: 0.82rem; }
+        .paper { padding: 0.9rem 1rem; }
+      }
+    </style>
+  </head>
+  <body>
 
-<p>
+    <nav>
+      <div class="nav-inner">
+        <a href="#" class="nav-name">Kevin C. Smith</a>
+        <div class="nav-links">
+          <a href="#working-papers">Working Papers</a>
+          <a href="#published-papers">Publications</a>
+          <a href="#teaching">Teaching</a>
+        </div>
+      </div>
+    </nav>
 
-<table width=“100%" border="0" cellspacing=“185” cellpadding=“85”>
-  <tr>
-    <td width=“30%" align=“left”><h1 style=“float:left;”><b>Kevin C. Smith  &nbsp <br></b></h1>
-Associate Professor of Accounting<br>
-Stanford Graduate School of Business <br>
-Email: kevinsm [at] stanford.edu<br>
-<a href="https://www.dropbox.com/scl/fi/0mycsbnedym7uzbiga2k1/2024cv-web.pdf?rlkey=b9ais5kc59r5be3ny8629x2md&dl=0">[vitae]</a>
-<a href="https://www.google.com/url?q=https%3A%2F%2Fpapers.ssrn.com%2Fsol3%2Fcf_dev%2FAbsByAuth.cfm%3Fper_id%3D2426523&sa=D&sntz=1&usg=AFQjCNFnsBCO-gcck0Gyq21U5XxRk3gZqg">[ssrn]</a>
-<a href="https://scholar.google.com/citations?user=WxANjKkAAAAJ&hl=en">[google scholar]</a>
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Kevin C. Smith</h1>
+        <div class="title">Associate Professor of Accounting</div>
+        <div class="affiliation">Stanford Graduate School of Business</div>
+        <div class="contact">kevinsm [at] stanford.edu</div>
+        <div class="links">
+          <a href="https://www.dropbox.com/scl/fi/0mycsbnedym7uzbiga2k1/2024cv-web.pdf?rlkey=b9ais5kc59r5be3ny8629x2md&dl=0">Vitae</a>
+          <a href="https://www.google.com/url?q=https%3A%2F%2Fpapers.ssrn.com%2Fsol3%2Fcf_dev%2FAbsByAuth.cfm%3Fper_id%3D2426523&sa=D&sntz=1&usg=AFQjCNFnsBCO-gcck0Gyq21U5XxRk3gZqg">SSRN</a>
+          <a href="https://scholar.google.com/citations?user=WxANjKkAAAAJ&hl=en">Google Scholar</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="unnamed.png" alt="Kevin C. Smith" />
+      </div>
+    </header>
 
+    <main>
 
-</td>
-<td width=“40%" align=“center”><br><br><img src="unnamed.png" width="300"; text-indent: 25em” />
-<!-- <td width=“100%" align=“right”><br><br><img src="unnamed.png" style=“max-width:50%;max-height:50%;text-indent: 25em” alt=“” /> -->
-</td>
-  </tr>
-</table>
-<br>
-<h4 id=‘workingpapers’><b>Working Papers</b></h4>
+      <!-- ============ WORKING PAPERS ============ -->
+      <section id="working-papers">
+        <h2>Working Papers</h2>
 
-<ul>
-	<b>Kevin Smith. Rethinking Disclosure and the Cost of Capital.</b>
-	<br> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5841422">[paper]</a> <br>
-	<em>Focused survey of theoretical and empirical work on firm disclosure and the cost of capital, alongside an illustrative model. Discusses lingering issues in the literature, including unresolved puzzles.</em>
-</ul>
-	
-<ul>
-	 <b>Snehal Banerjee and Kevin Smith. Public Information and the Securities Lending Market.</b> 
-<br> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4986139">[paper]</a>	<br>
-	<em>Studies how trading, stock returns, and borrow fees in the securities lending market evolve around public announcements, such as earnings. These patterns hinge on, and can be used to infer, the extent to which investors disagree about firm value vs. the announcement.</em>	 
-</ul>
+        <div class="paper">
+          <div class="paper-title">Kevin Smith. Rethinking Disclosure and the Cost of Capital.</div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5841422">[paper]</a>
+          </div>
+          <div class="paper-abstract">Focused survey of theoretical and empirical work on firm disclosure and the cost of capital, alongside an illustrative model. Discusses lingering issues in the literature, including unresolved puzzles.</div>
+        </div>
 
-<ul>
-	 <b>Junyoung Jeong, Rebecca Lester, and Kevin Smith. The Corporate Alternative Minimum Tax
-and Financial Reporting Incentives.</b> 
-	<br>
-	<em>Models how the corporate alternative minimum tax affects real and accruals-based earnings management. Studies the implications for earnings' informativeness, how investors respond to earnings, and which firms pay more in the tax.</em>	 
-</ul>
+        <div class="paper">
+          <div class="paper-title">Snehal Banerjee and Kevin Smith. Public Information and the Securities Lending Market.</div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4986139">[paper]</a>
+          </div>
+          <div class="paper-abstract">Studies how trading, stock returns, and borrow fees in the securities lending market evolve around public announcements, such as earnings. These patterns hinge on, and can be used to infer, the extent to which investors disagree about firm value vs. the announcement.</div>
+        </div>
 
-	
+        <div class="paper">
+          <div class="paper-title">Junyoung Jeong, Rebecca Lester, and Kevin Smith. The Corporate Alternative Minimum Tax and Financial Reporting Incentives.</div>
+          <div class="paper-abstract">Models how the corporate alternative minimum tax affects real and accruals-based earnings management. Studies the implications for earnings' informativeness, how investors respond to earnings, and which firms pay more in the tax.</div>
+        </div>
+      </section>
 
-<h4 id=‘papers’><b>Forthcoming/Published Papers</b></h4>
+      <!-- ============ PUBLISHED PAPERS ============ -->
+      <section id="published-papers">
+        <h2>Forthcoming/Published Papers</h2>
 
-	
-<ul>
-	 <b>Kevin Smith. Climate Risk Disclosure and Risk Sharing in Financial Markets.</b> <br> 
-	<font color="gray"><b>Forthcoming, <em>Review of Financial Studies</em></b></font>
-<br> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4552385">[paper]</a>	<br>
-	<em>Climate risk disclosure renders financial markets more effective at enabling climate risk sharing, but firms' voluntary climate risk disclosures can be enough for efficient risk sharing. The impact of climate disclosure on firms' expected returns depends on the climate preferences of the firm's investor base.</em>
-	 
-</ul>
+        <div class="paper">
+          <div class="paper-title">Kevin Smith. Climate Risk Disclosure and Risk Sharing in Financial Markets.</div>
+          <div class="paper-venue">Forthcoming, <em>Review of Financial Studies</em></div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4552385">[paper]</a>
+          </div>
+          <div class="paper-abstract">Climate risk disclosure renders financial markets more effective at enabling climate risk sharing, but firms' voluntary climate risk disclosures can be enough for efficient risk sharing. The impact of climate disclosure on firms' expected returns depends on the climate preferences of the firm's investor base.</div>
+        </div>
 
-	
-<ul>
- 	<b>Tim de Silva, Kevin Smith, and Eric So. Losing is Optional: Retail Option Trading and Earnings Announcement Volatility.</b> <br>
-		<font color="gray"><b>Forthcoming, <em>Review of Finance</em></b></font>
-	<br> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4050165">[paper]</a><br>
-	<em>Retail investors buy call options prior to the earnings announcements that generate the most risk to market makers, causing the prices of these options to soar and depleting these traders' wealth.</em>
-	 
-</ul>
+        <div class="paper">
+          <div class="paper-title">Tim de Silva, Kevin Smith, and Eric So. Losing is Optional: Retail Option Trading and Earnings Announcement Volatility.</div>
+          <div class="paper-venue">Forthcoming, <em>Review of Finance</em></div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4050165">[paper]</a>
+          </div>
+          <div class="paper-abstract">Retail investors buy call options prior to the earnings announcements that generate the most risk to market makers, causing the prices of these options to soar and depleting these traders' wealth.</div>
+        </div>
 
+        <div class="paper">
+          <div class="paper-title">Kevin Smith. Beyond the Event Window: Earnings Horizon and the Informativeness of Earnings Announcements. <em>The Accounting Review</em> 100.2 (2025): 351-382.</div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4502853">[paper]</a>
+          </div>
+          <div class="paper-abstract">Earnings' usefulness in valuation depends on their "horizon," or how long it would have taken the information they contain to arrive via other sources; this can be estimated using patterns in return volatility over firms' reporting cycles.</div>
+        </div>
 
-<ul>
-	 <b>Kevin Smith. Beyond the Event Window: Earnings Horizon and the Informativeness of Earnings Announcements. <i> 
-The Accounting Review </i> 100.2 (2025): 351-382.</i></b> 
-<br> <a href="	https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4502853">[paper]</a>	<br>
-	<em>Earnings' usefulness in valuation depends on their "horizon," or how long it would have taken the information they contain to arrive via other sources; this can be estimated using patterns in return volatility over firms' reporting cycles. </em>
-</ul>
+        <div class="paper">
+          <div class="paper-title">Snehal Banerjee, Bradyn Breon-Drish, and Kevin Smith. Asymmetric Information, Disagreement, and the Valuation of Debt and Equity. <em>Journal of Financial Economics</em> 165 (2025).</div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4278165">[paper]</a>
+          </div>
+          <div class="paper-abstract">Accounting for investor private information and liquidity trade, belief dispersion and distress risk have opposite effects on expected equity and debt returns.</div>
+        </div>
 
-	<ul>
-	 <b>Snehal Banerjee, Bradyn Breon-Drish, and Kevin Smith. Asymmetric Information, Disagreement, and the Valuation of Debt and Equity.
-	<i>Journal of Financial Economics</i> 165 (2025). </b> 
-<br> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4278165">[paper]</a>	<br>
-	<em> Accounting for investor private information and liquidity trade, belief dispersion and distress risk have opposite effects on expected equity and debt returns.</em> 
+        <div class="paper">
+          <div class="paper-title">Snehal Banerjee, Bradyn Breon-Drish, and Kevin Smith. Feedback Effects and Systematic Risk Exposures. <em>Journal of Finance</em> 80.2 (2025): 981-1028.</div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3825025">[paper]</a>
+          </div>
+          <div class="paper-abstract">When prices reflect both cash-flow and discount-rate news, how does feedback affect investment, firm value, and welfare?</div>
+        </div>
 
-	 
-</ul>
+        <div class="paper">
+          <div class="paper-title">Cyrus Aghamolla and Kevin Smith. Strategic Complexity in Disclosure. <em>Journal of Accounting and Economics</em> 76.2 (2023).</div>
+          <div class="paper-links">
+            <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165410123000599">[paper]</a>
+          </div>
+          <div class="paper-abstract">When complexity in disclosure can be used to obfuscate bad news, but is also necessary to fully convey information, in equilibrium, both firms with highly positive and negative news issue complex disclosures.</div>
+        </div>
 
-	
-<ul>
-	 <b>Snehal Banerjee, Bradyn Breon-Drish, and Kevin Smith. Feedback Effects and Systematic Risk Exposures. 
-	 <i> Journal of Finance </i> 80.2 (2025): 981-1028. </b>
-<br> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3825025">[paper]</a>  <br>
-	<em>When prices reflect both cash-flow and discount-rate news, how does feedback affect investment, firm value, and welfare?</em>	 
-</ul>
+        <div class="paper">
+          <div class="paper-title">Davide Cianciaruso, Iv&#225;n Marinovic, and Kevin Smith. Asymmetric Disclosure, Noise Trade, and Firm Valuation. <em>The Accounting Review</em> 98.5 (2023): 215-240.</div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3686089">[paper]</a>
+          </div>
+          <div class="paper-abstract">Because conservative accounting delays the recognition of highly positive news, it leaves open the possibility of a future spike in price. This presents a downside risk to short sellers, which causes noise trade to raise firms' valuations.</div>
+        </div>
 
-	
-<ul>
-	<b>Cyrus Aghamolla and Kevin Smith. Strategic Complexity in Disclosure. <i>Journal of Accounting and Economics</i> 76.2 (2023).</b>
-<br> <a href="https://www.sciencedirect.com/science/article/abs/pii/S0165410123000599">[paper]</a>	<br>
-	<em>When complexity in disclosure can be used to obfuscate bad news, but is also necessary to fully convey information, in equilibrium, both firms with highly positive and negative news issue complex disclosures. </em>
+        <div class="paper">
+          <div class="paper-title">Snehal Banerjee, Iv&#225;n Marinovic, and Kevin Smith. Disclosing to Informed Traders. <em>Journal of Finance</em> 79.2 (2024): 1513&#8211;1578.</div>
+          <div class="paper-links">
+            <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.13296">[paper]</a>
+          </div>
+          <div class="paper-abstract">Introduces voluntary disclosure a la Dye and Verrecchia to the classic Grossman-Stiglitz-Hellwig model of trade, and studies liquidity, mandatory disclosure, and returns.</div>
+        </div>
 
-</ul>
-	
+        <div class="paper">
+          <div class="paper-title">Kevin Smith. An Option-Based Approach to Measuring Disclosure Asymmetry. <em>The Accounting Review</em> 98.4 (2023): 373-403.</div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3068855">[paper]</a>
+            <a href="https://www.dropbox.com/s/xjt9rsi737zhtva/TAR%20Internet%20Appendix.pdf?dl=0">[supplemental appendix]</a>
+            <a href="https://www.dropbox.com/sh/8ojqgut8t9yh97b/AABmwvm8tOkxZuqXXBAHn3jya?dl=0">[matlab&amp;R code]</a>
+          </div>
+          <div class="paper-abstract">Conservatism vs. aggressiveness in earnings determines the skewness of returns around their release, which can be measured using the relative prices of in-the-money and out-of-the-money options.</div>
+        </div>
 
+        <div class="paper">
+          <div class="paper-title">Kevin Smith. Risk Information, Investor Learning, and Informational Feedback. <em>Review of Accounting Studies</em> (2022).</div>
+          <div class="paper-links">
+            <a href="https://rdcu.be/cUFzC">[paper]</a>
+            <a href="https://www.dropbox.com/s/kqvf7rx3z4s4zix/Risk_Feedback_IA.pdf?dl=0">[supplemental appendix]</a>
+          </div>
+          <div class="paper-abstract">Risk information raises sophisticated investors' ability to profit from private information and managers' ability to learn from stock prices.</div>
+        </div>
 
-<ul>
- 	<b>Davide Cianciaruso, Iván Marinovic, and Kevin Smith. Asymmetric Disclosure, Noise Trade, and Firm Valuation. <i>The Accounting Review</i> 98.5 (2023): 215-240.</b>
-<br> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3686089">[paper]</a>		
-	<br>
-	<em> Because conservative accounting delays the recognition of highly positive news, it leaves open the possibility of a future spike in price. This presents a downside risk to short sellers, which causes noise trade to raise firms' valuations. </em>
-	 
-</ul>
+        <div class="paper">
+          <div class="paper-title">Kevin Smith and Eric C. So. Measuring Risk Information. <em>Journal of Accounting Research</em> 60.2 (2022): 375-426.</div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3519543">[paper]</a>
+            <a href="/Smith and So - Online Appendix.pdf">[supplemental appendix]</a>
+            <a href="https://youtu.be/3ZkdfnylAzM?t=18276">[<em>JAR</em> conference presentation]</a>
+            <a href="https://research.chicagobooth.edu/-/media/research/arc/docs/journal/online-supplements/ss-datasheet-code-and-identifiers.zip">[data/code]</a>
+          </div>
+          <div class="paper-abstract">Changes in the implied volatilities of options with different maturity dates can be used to measure the information in earnings on firm risk. Empirically, earnings appear to significantly revise investors' beliefs about risk.</div>
+        </div>
 
+        <div class="paper">
+          <div class="paper-title">Anne Beyer and Kevin Smith. Learning about Risk-Factor Exposures from Earnings: Implications for Asset Pricing and Manipulation. <em>Journal of Accounting and Economics</em> 72.1 (2021).</div>
+          <div class="paper-links">
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3800379">[paper]</a>
+          </div>
+          <div class="paper-abstract">Earnings' use in learning about risk causes ERCs to vary over the business cycle, generates return autocorrelation, and leads to asymmetric reactions to positive vs. negative earnings surprises.</div>
+        </div>
 
-<ul>
-	 <b>Snehal Banerjee, Iván Marinovic, and Kevin Smith. Disclosing to Informed Traders. <i>Journal of Finance</i> 79.2 (2024): 1513–1578. </b>
-<br> <a href="https://onlinelibrary.wiley.com/doi/abs/10.1111/jofi.13296">[paper]</a>	
-	<br>
-	
-	<em>Introduces voluntary disclosure a la Dye and Verrecchia to the classic Grossman-Stiglitz-Hellwig model of trade, and studies liquidity, mandatory disclosure, and returns. </em>
-	 
-</ul>
+        <div class="paper">
+          <div class="paper-title">Paul Fischer, Mirko Heinle, and Kevin Smith. Constrained Listening, Audience Alignment, and Expert Communication. <em>RAND Journal of Economics</em> 51.4 (2020): 1037-1062.</div>
+          <div class="paper-links">
+            <a href="https://onlinelibrary.wiley.com/doi/10.1111/1756-2171.12349">[paper]</a>
+            <a href="https://www.dropbox.com/s/d0zlk33pcyf6vgr/RAND%20Internet%20Appendix.pdf?dl=0">[supplemental appendix]</a>
+          </div>
+          <div class="paper-abstract">In a cheap-talk setting with multiple receivers, additional senders facilitate communication because the receivers can match with senders who have similar biases.</div>
+        </div>
 
+        <div class="paper">
+          <div class="paper-title">Kevin Smith. Financial Markets with Trade on Risk and Return. <em>The Review of Financial Studies</em> 32.10 (2019): 4042-4078.</div>
+          <div class="paper-links">
+            <a href="https://academic.oup.com/rfs/article/32/10/4042/5305591">[paper]</a>
+            <a href="https://drive.google.com/file/d/1hQNQX0Mq7JSk0QoMb3xzYlZcs2DBl4gw/view?usp=sharing">[supplemental appendix]</a>
+          </div>
+          <div class="paper-abstract">Jointly modeling investors' private information on firms' expected cash flows and risk can reconcile empirical patterns in derivative pricing and trade.</div>
+        </div>
 
-<ul>
-	 <b>Kevin Smith. An Option-Based Approach to Measuring Disclosure Asymmetry. <i>The Accounting Review</i> 98.4 (2023): 373-403.</b>
-<br> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3068855">[paper]</a> <a href="https://www.dropbox.com/s/xjt9rsi737zhtva/TAR%20Internet%20Appendix.pdf?dl=0">[supplemental appendix]</a> <a href="https://www.dropbox.com/sh/8ojqgut8t9yh97b/AABmwvm8tOkxZuqXXBAHn3jya?dl=0">[matlab&R code]</a>
-<br>
+        <div class="paper">
+          <div class="paper-title">Mirko Heinle and Kevin Smith. A Theory of Risk Disclosure. <em>Review of Accounting Studies</em> 22.4 (2018): 1459-1491.</div>
+          <div class="paper-links">
+            <a href="https://link.springer.com/article/10.1007/s11142-017-9414-2">[paper]</a>
+          </div>
+          <div class="paper-abstract">Information on overall firm risk lowers firms' costs of capital; firms have greater incentives to provide such information following spikes in risk.</div>
+        </div>
 
-<em> Conservatism vs. aggressiveness in earnings determines the skewness of returns around their release, which can be measured using the relative prices of in-the-money and out-of-the-money options.</em>
-	 
-</ul>
+        <div class="paper">
+          <div class="paper-title">Mirko Heinle, Kevin Smith, and Robert Verrecchia. Risk-Factor Disclosure and Asset Prices. <em>The Accounting Review</em> 93.2 (2018): 191-208.</div>
+          <div class="paper-links">
+            <a href="https://doi.org/10.2308/accr-51863">[paper]</a>
+          </div>
+          <div class="paper-abstract">Uncertainty over firms' systematic risk-factor exposures generates skewness in payoffs, which investors like. As a result, disclosure about these exposures can <em>raise</em> firms' costs of capital.</div>
+        </div>
+      </section>
 
+      <!-- ============ TEACHING ============ -->
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <p class="teaching-intro"><strong>PhD Lecture Notes: Disclosure and Financial Markets</strong><br>
+        I teach a PhD course that covers disclosure theory, with a focus on disclosure in models of financial markets. The lecture slides, which are a perpetual work in progress, are available below.</p>
+        <ul class="lecture-list">
+          <li><a href="https://www.dropbox.com/scl/fi/utl753aawgpsw0dtvdsnw/Slides-1.pdf?rlkey=82dppng2odgfqk06lt2w5ur0b&dl=0">Disclosure and prices: intro</a></li>
+          <li><a href="https://www.dropbox.com/s/j35odq4hn6ag1au/Slides%202.pdf?dl=0">Disclosure and prices: applications</a></li>
+          <li><a href="https://www.dropbox.com/scl/fi/3v6gmv1o4b2dkvd7dwinf/Slides-3.pdf?rlkey=25jy29hfr48c1eisuisii9lnq&dl=0">Disclosure and liquidity</a></li>
+          <li><a href="https://www.dropbox.com/s/a36hf49alhzrtmc/Slides%204.pdf?dl=0">Disclosure, trade, investor welfare, and regulation: part 1</a></li>
+          <li><a href="https://www.dropbox.com/s/pz0w0za1fptr916/Slides%205.pdf?dl=0">Disclosure, trade, investor welfare, and regulation: part 2</a></li>
+          <li><a href="https://www.dropbox.com/s/wg876wi2l83x6ef/Slides%206.pdf?dl=0">Earnings manipulation: intro</a></li>
+          <li><a href="https://www.dropbox.com/s/6h4j4amekiulhy0/Slides%207.pdf?dl=0">Earnings manipulation: topics</a></li>
+          <li><a href="https://www.dropbox.com/s/158j1toc8gl3x69/Slides%208.pdf?dl=0">Voluntary disclosure; product markets</a></li>
+          <li><a href="https://www.dropbox.com/s/g6chg8ozvf0fnhq/Slides%209.pdf?dl=0">Cheap talk</a></li>
+        </ul>
+      </section>
 
+    </main>
 
-<ul>
-	 <b>Kevin Smith. Risk Information, Investor Learning, and Informational Feedback. <i>Review of Accounting Studies</i> (2022).</b><br>
-<a href="https://rdcu.be/cUFzC">[paper]</a> <a href="https://www.dropbox.com/s/kqvf7rx3z4s4zix/Risk_Feedback_IA.pdf?dl=0">[supplemental appendix]</a> <br>
-	<em> Risk information raises sophisticated investors' ability to profit from private information and managers' ability to learn from stock prices. </em>
-	</ul>
- 
-<ul>
-	 <b>Kevin Smith and Eric C. So. Measuring Risk Information. <i>Journal of Accounting Research</i> 60.2 (2022): 375-426.</b><br>
-<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3519543">[paper]</a>
-<a href="/Smith and So - Online Appendix.pdf">[supplemental appendix]</a> 
-<a href="https://youtu.be/3ZkdfnylAzM?t=18276">[<em>JAR</em> conference presentation]</a>
-<a href="https://research.chicagobooth.edu/-/media/research/arc/docs/journal/online-supplements/ss-datasheet-code-and-identifiers.zip">[data/code]</a>	
-	<br>
-	<em> Changes in the implied volatilities of options with different maturity dates can be used to measure the information in earnings on firm risk. Empirically, earnings appear to significantly revise investors' beliefs about risk.  </em>
-	 
-</ul>
-
-
-<ul>
- <b>Anne Beyer and Kevin Smith. Learning about Risk-Factor Exposures from Earnings: Implications for Asset Pricing and Manipulation. <i> Journal of Accounting and Economics </i> 72.1 (2021).</b><br>
-<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3800379">[paper]</a>
-	<br>
-	<em> Earnings' use in learning about risk causes ERCs to vary over the business cycle, generates return autocorrelation, and leads to asymmetric reactions to positive vs. negative earnings surprises. </em>
-	 
-</ul>
-<ul>
- <b>Paul Fischer, Mirko Heinle, and Kevin Smith. Constrained Listening, Audience Alignment, and Expert Communication. <i> RAND Journal of Economics</i> 51.4 (2020): 1037-1062.</b>
-<br> <a href="https://onlinelibrary.wiley.com/doi/10.1111/1756-2171.12349">[paper]</a>
-<a href="https://www.dropbox.com/s/d0zlk33pcyf6vgr/RAND%20Internet%20Appendix.pdf?dl=0">[supplemental appendix]</a>
-	<br>
-	<em> In a cheap-talk setting with multiple receivers, additional senders facilitate communication because the receivers can match with senders who have similar biases. </em>
- 
-</ul>
-<ul>
-	 <b>
-Kevin Smith. Financial Markets with Trade on Risk and Return. <i>The Review of Financial Studies</i> 32.10 (2019): 4042-4078.<br></b>
-<a href="https://academic.oup.com/rfs/article/32/10/4042/5305591">[paper]</a>
-<a href="https://drive.google.com/file/d/1hQNQX0Mq7JSk0QoMb3xzYlZcs2DBl4gw/view?usp=sharing">[supplemental appendix]</a> 
-	<br> 
-	<em> Jointly modeling investors' private information on firms' expected cash flows and risk can reconcile empirical patterns in derivative pricing and trade. </em>
-	 
-</ul>
-<ul>
- <b>Mirko Heinle and Kevin Smith. A Theory of Risk Disclosure. <i>Review of Accounting Studies</i> 22.4 (2018): 1459-1491.<br></b>
-<a href="https://link.springer.com/article/10.1007/s11142-017-9414-2">[paper]</a>
-	<br>
-	<em>Information on overall firm risk lowers firms' costs of capital; firms have greater incentives to provide such information following spikes in risk.</em>
-	 
-</ul>
-<ul>
- <b>Mirko Heinle, Kevin Smith, and Robert Verrecchia. Risk-Factor Disclosure and Asset Prices. <i>The Accounting Review</i> 93.2 (2018): 191-208.</b> <br>
-<a href="https://doi.org/10.2308/accr-51863">[paper]</a>
-	<br>
-	<em> Uncertainty over firms' systematic risk-factor exposures generates skewness in payoffs, which investors like. As a result, disclosure about these exposures can <i>raise</i> firms' costs of capital.</em>
-	 
-</ul>
-<br>
-
-
-<h4 id=‘teaching’><b>Teaching</b></h4>
-<b>PhD Lecture Notes: Disclosure and Financial Markets</b>
-<br> I teach a PhD course that covers disclosure theory, with a focus on disclosure in models of financial markets. The lecture slides, which are a perpetual work in progress, are available below.
-<br> <a href="https://www.dropbox.com/scl/fi/utl753aawgpsw0dtvdsnw/Slides-1.pdf?rlkey=82dppng2odgfqk06lt2w5ur0b&dl=0">Disclosure and prices: intro </a>
-<br> <a href="https://www.dropbox.com/s/j35odq4hn6ag1au/Slides%202.pdf?dl=0">Disclosure and prices: applications </a>
-<br> <a href="https://www.dropbox.com/scl/fi/3v6gmv1o4b2dkvd7dwinf/Slides-3.pdf?rlkey=25jy29hfr48c1eisuisii9lnq&dl=0">Disclosure and liquidity</a>
-<br> <a href="https://www.dropbox.com/s/a36hf49alhzrtmc/Slides%204.pdf?dl=0">Disclosure, trade, investor welfare, and regulation: part 1 </a>
-<br> <a href="https://www.dropbox.com/s/pz0w0za1fptr916/Slides%205.pdf?dl=0">Disclosure, trade, investor welfare, and regulation: part 2 </a>
-<br> <a href="https://www.dropbox.com/s/wg876wi2l83x6ef/Slides%206.pdf?dl=0">Earnings manipulation: intro</a>
-<br> <a href="https://www.dropbox.com/s/6h4j4amekiulhy0/Slides%207.pdf?dl=0">Earnings manipulation: topics</a>
-<br> <a href="https://www.dropbox.com/s/158j1toc8gl3x69/Slides%208.pdf?dl=0">Voluntary disclosure; product markets</a>
-<br> <a href="https://www.dropbox.com/s/g6chg8ozvf0fnhq/Slides%209.pdf?dl=0">Cheap talk</a>
   </body>
 </html>
